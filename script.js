@@ -15,7 +15,7 @@ function type() {
 }
 
 function flashCursor() {
-  let flashDuration = 300000; // Flash for 3 seconds
+  let flashDuration = 30000000; // Flash for 3 seconds
   setTimeout(() => fadeOut(), flashDuration); // Fade out after the flash duration
 }
 
@@ -23,7 +23,7 @@ function fadeOut() {
   document.querySelector(".crt-screen").classList.add("fade-out");
   setTimeout(() => {
     window.location.href = "index.html"; // Redirect to your main website
-  }, 3000000000); // Adjust timing to match fade-out duration
+  }, 20000000); // Adjust timing to match fade-out duration
 }
 
 type();
