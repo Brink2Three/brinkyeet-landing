@@ -11,9 +11,32 @@
     <img class="crt-frame" src="/images/crt_amber_mask.png">
     <div class="terminal">
       <div class="divider">
-        <span class="prompt">brink@brinkyeet.com:/home/brink$</span>
+        <div class="motd">
+            Last login: Fri Apr  20 3:19:23 from YOUR IP<br>
+          <script>
+            //<span id="ip-address"></span>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Fetch the IP address from the API
+                fetch("https://api.ipify.org?format=json")
+                    .then(response => response.json())
+                    .then(data => {
+                        // Display the IP address on the screen
+                        document.getElementById("ip-address").textContent = data.ip;
+                    })
+                    .catch(error => {
+                        console.error("Error fetching IP address:", error);
+                    });
+            });
+        </script>
+          ⠀⠀⠀⠀⠀Brinkyeet (c) 2018-2025, nobody<br>
+          ⠀⠀⠀⠀⠀This is just a website. There is nothing special to look for, so don't go snooping.<br>
+          ⠀⠀⠀⠀⠀For more information, feel free to explore the docs here: <br>
+          ⠀⠀⠀⠀⠀https://docs.brinkyeet.com (coming soon)<br>
+          Welcome to Brinkyeet <br>
+        </div>
+          <span class="prompt">brink@brinkyeet.com:/home/brink$</span>
         <div class="text-container">
-        <span id="typed-text"></span><span class="cursor">█</span>
+          <span id="typed-text"></span><span class="cursor">█</span>
         </div>
       </div>
     </div>

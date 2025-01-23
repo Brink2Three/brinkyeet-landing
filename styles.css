@@ -16,13 +16,25 @@ body, html {
     /*overflow: hidden; */
   }
   
+
+  .motd {
+    color: #ecfff0;
+    font-family: "WebPlus_IBM_VGA_8x16";
+    padding-bottom: 5px;
+  }
+  
+  .divider {
+    display: block; /* Ensure dividers are stacked */
+    margin-bottom: 5px; /* Add spacing between dividers */
+  }
+
   .crt-screen {
     width: 100%;
     height: 100%;
     display: flex;
     position: relative;
     flex-direction: column;
-    background: radial-gradient(circle, rgba(0,255,0,0.2) 0%, rgba(0,0,0,1) 70%);
+    background: radial-gradient(circle, rgba(0,255,0,0.14) 0%, rgba(0,0,0,1) 70%);
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
   }
   
@@ -30,19 +42,20 @@ body, html {
     color: #78FF32 ;
     font-family: "WebPlus_IBM_VGA_8x16", Inconsolata, monospace;
     font-size: 1.5rem;
-    text-shadow: 0 0 2px #78FF32 ;
+    text-shadow: 0 0 3px #47971f ;
     white-space: normal; /* Prevent wrapping */
     display: flex; /* Allow elements to stay in one line */
     position: relative;
     justify-content: start;
-    margin-left: 5%;
-    margin-top: 5%;
+    margin-left: 4%;
+    margin-top: 3%;
     flex-direction: row;
   }
-  
+
   .prompt {
     color: #78FF32 ;
     white-space: normal; /* Prevent wrapping */
+    display: inline-block;
   }
   
   .text-container {

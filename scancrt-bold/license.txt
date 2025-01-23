@@ -1,0 +1,8 @@
+﻿The FontStruction “ScanCRT bold”
+(https://fontstruct.com/fontstructions/show/668491) by Nicolas Esposito is
+licensed under a Creative Commons Attribution license
+(http://creativecommons.org/licenses/by/3.0/).
+“ScanCRT bold” was originally cloned (copied) from the FontStruction
+“ScanCRT regular” (https://fontstruct.com/fontstructions/show/668489) by
+Nicolas Esposito, which is licensed under a Creative Commons Attribution license
+(http://creativecommons.org/licenses/by/3.0/).
