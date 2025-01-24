@@ -1,6 +1,8 @@
 const text = "Hello! I've been expecting you";
 const typedText = document.getElementById("typed-text");
 const cursor = document.querySelector(".cursor");
+let isPrompt2Visible = false;
+
 
 let index = 0;
 
@@ -10,6 +12,8 @@ function type() {
     index++;
     setTimeout(type, 20); // Typing speed in milliseconds
   } else {
+    document.getElementById('prompt2').style.visibility = 'visible';
+    console.log(document.querySelector(".prompt2"));
     flashCursor(); // Start the cursor flashing after typing finishes
   }
 }
