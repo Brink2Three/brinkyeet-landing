@@ -8,10 +8,10 @@ function type() {
   if (index < text.length) {
     typedText.textContent += text[index];
     index++;
-    setTimeout(type, 20); // Typing speed in milliseconds
+    setTimeout(type, 50); // Typing speed in milliseconds
   } else {
+    setTimeout(() => {}, 500);
     document.getElementById('prompt2').style.visibility = 'visible';
-    console.log(document.querySelector(".prompt2"));
     flashCursor(); // Start the cursor flashing after typing finishes
   }
 }
@@ -25,7 +25,7 @@ function fadeOut() {
   document.querySelector(".crt-screen").classList.add("fade-out");
   setTimeout(() => {
     window.location.href = "https://www.brinkyeet.com"; // Redirect to your main website
-  }, 5000); // Adjust timing to match fade-out duration
+  }, 3000); // Adjust timing to match fade-out duration
 }
 
 function ipdisplay() {
