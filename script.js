@@ -24,7 +24,7 @@ function flashCursor() {
 function fadeOut() {
   document.querySelector(".crt-screen").classList.add("fade-out");
   setTimeout(() => {
-    window.location.href = "https://brinkyeet.com"; // Redirect to your main website
+    window.location.href = "https://www.brinkyeet.com"; // Redirect to your main website
   }, 5000); // Adjust timing to match fade-out duration
 }
 
