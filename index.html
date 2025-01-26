@@ -12,9 +12,8 @@
     <div class="terminal">
       <div class="divider">
         <div class="motd">
-            Last login: Fri Apr  20 3:19:23 from YOUR IP<br>
+            Last login: Fri Apr  20 3:19:23 from <span id="ip-address"></span><br>
           <script>
-            //<span id="ip-address"></span>
             document.addEventListener("DOMContentLoaded", function() {
                 // Fetch the IP address from the API
                 fetch("https://api.ipify.org?format=json")

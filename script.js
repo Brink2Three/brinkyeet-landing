@@ -1,8 +1,6 @@
 const text = "Hello! I've been expecting you";
 const typedText = document.getElementById("typed-text");
 const cursor = document.querySelector(".cursor");
-let isPrompt2Visible = false;
-
 
 let index = 0;
 
@@ -19,15 +17,15 @@ function type() {
 }
 
 function flashCursor() {
-  let flashDuration = 30000000; // Flash for 3 seconds
+  let flashDuration = 5000; // Flash for 3 seconds
   setTimeout(() => fadeOut(), flashDuration); // Fade out after the flash duration
 }
 
 function fadeOut() {
   document.querySelector(".crt-screen").classList.add("fade-out");
   setTimeout(() => {
-    window.location.href = "index.html"; // Redirect to your main website
-  }, 20000000); // Adjust timing to match fade-out duration
+    window.location.href = "https://brinkyeet.com"; // Redirect to your main website
+  }, 5000); // Adjust timing to match fade-out duration
 }
 
 function ipdisplay() {
